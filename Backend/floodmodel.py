@@ -2,11 +2,11 @@ import pandas as pd
 import pickle
 
 # Load your model and prepare training columns
-with open(r'C:\Users\Het Ashishbhai Modi\Desktop\NASAAA\my-project\project\NASAAA\Backend\models\FloodModel.pkl', 'rb') as file:
+with open(r'./models/FloodModel.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Load the dataset and preprocess to get training columns
-df = pd.read_csv(r"C:\Users\Het Ashishbhai Modi\Desktop\NASAAA\my-project\project\NASAAA\Backend\dataset\flood_risk_dataset_india.csv")
+df = pd.read_csv(r"./dataset/flood_risk_dataset_india.csv")
 X = df.drop('Flood Occurred', axis=1)
 X = pd.get_dummies(X, drop_first=True)
 training_columns = X.columns.tolist()  # Save columns after one-hot encoding

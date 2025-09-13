@@ -234,7 +234,7 @@ def getFactoryReport():
         print(reportOfEss)
         relatedReport = generate_report_with_gemini1(reportOfEss)
         print(relatedReport)
-        reportFile = create_pdf_from_reportEIAFactory(relatedReport,image_file_path=r'C:\Users\Het Ashishbhai Modi\Desktop\NASAAA\my-project\project\NASAAA\Backend\material_waste_plot.png')
+        reportFile = create_pdf_from_reportEIAFactory(relatedReport,image_file_path=r'./material_waste_plot.png')
         return send_file(reportFile,as_attachment=True)
     except Exception as e:
         print("Error:", e)

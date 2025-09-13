@@ -81,4 +81,4 @@ if __name__ == "__main__" :
     relatedreport = generate_report_with_gemini1(reportOfEss)
     print(relatedreport)
     image_buffer = plot_material_waste()
-    create_pdf_from_reportEIAFactory(relatedreport,image_file_path=r'C:\Users\raj\Desktop\NasaHack\reactwork\material_waste_per_floor.png')
+    create_pdf_from_reportEIAFactory(relatedreport,image_file_path=r'./material_waste_plot.png')

@@ -1,7 +1,7 @@
 import pickle
 
 # Load the model from the .pkl file
-with open(r'C:\Users\Het Ashishbhai Modi\Desktop\NASAAA\my-project\project\NASAAA\Backend\models\EarthQuack.pkl', 'rb') as file:
+with open(r'./models/EarthQuack.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
